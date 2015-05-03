@@ -10,5 +10,8 @@ class User < ActiveRecord::Base
 	          format: { with: VALID_EMAIL_REGEX }, 
 	          uniqueness: { case_sensitive: false } # Same chars diff case can`t go through
     
-    has_secure_password                                        
+    has_secure_password   
+
+    validates :password, presence: true, length: { minimum: 6 }
+    validates :password_confirmation, presence: true                                     
 end
