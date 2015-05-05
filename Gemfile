@@ -5,6 +5,7 @@ ruby '2.1.1'
 gem 'rails', '4.2.1'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby'
+gem 'debugger'
 
 group :development, :test do
   gem 'sqlite3'
